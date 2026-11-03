@@ -1,0 +1,27 @@
+meta {
+  name: Create bookmark
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/bookmarks
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "url": "https://example.com/a",
+    "title": "Article A",
+    "description": "optional"
+  }
+}
+
+vars:pre-request {
+  baseUrl:  http://127.0.0.1:5000
+}

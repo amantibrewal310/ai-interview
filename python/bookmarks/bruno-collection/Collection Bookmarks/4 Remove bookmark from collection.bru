@@ -1,0 +1,11 @@
+meta {
+  name: Remove bookmark from collection
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/collections/{{collectionId}}/bookmarks/{{bookmarkId}}
+  body: none
+  auth: none
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Rename collection
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/collections/{{collectionId}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Recipes"
+  }
+}

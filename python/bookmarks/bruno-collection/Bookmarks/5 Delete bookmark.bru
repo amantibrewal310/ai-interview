@@ -1,0 +1,16 @@
+meta {
+  name: Delete bookmark
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/bookmarks/{{bookmarkId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  bookmarkId: 1
+  baseUrl:  http://127.0.0.1:5000
+}

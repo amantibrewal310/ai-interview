@@ -1,0 +1,11 @@
+meta {
+  name: List bookmarks in collection
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/collections/{{collectionId}}/bookmarks
+  body: none
+  auth: none
+}

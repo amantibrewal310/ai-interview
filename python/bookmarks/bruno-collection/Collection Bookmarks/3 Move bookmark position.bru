@@ -1,0 +1,21 @@
+meta {
+  name: Move bookmark position
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/collections/{{collectionId}}/bookmarks/{{bookmarkId}}/position
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "position": 5
+  }
+}
